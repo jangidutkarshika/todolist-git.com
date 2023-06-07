@@ -200,7 +200,7 @@ input:checked~.bubble::after {
 }
 
 .todo-item .todo-content {
-    flex: 1 10 0%;
+    flex: 10 1 0%;
 }
 
 .todo-item .todo-content input {
