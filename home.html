@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List 2023</title>
+    <!-- CSS Import -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- End of CSS Import -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <!-- End of Fonts -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+	<div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+      <div class="text">To Do List</div>
+      <ul>
+        <li class="active"><a href="index.html">Home  </a></li>
+        <li>
+          <a href="#" class="feat-btn">All Tasks 
+            <span class="fas fa-caret-down first"></span>
+          </a>
+          <ul class="feat-show">
+            <li><a href="today.html">Today</a></li>
+            <li><a href="upcoming.html">Upcoming</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="serv-btn">My lists
+            <span class="fas fa-caret-down second"></span>
+          </a>
+          <ul class="serv-show">
+            <li><a href="home.html">Personal</a></li>
+            <li><a href="home.html">Work</a></li>
+          </ul>
+        </li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="calender.html">Calender</a></li>
+        <li><a href="inbox.html">Inbox</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSftMgR67msKoKWmMbAGp2WDGeyBhqpSqJWZsoTuir7zpmjYLQ/viewform?usp=sf_link">Feedback</a></li>
+      </ul>
+    </nav>
+  
+    <script>
+    $('.btn').click(function(){
+      $(this).toggleClass("click");
+      $('.sidebar').toggleClass("show");
+    });
+      $('.feat-btn').click(function(){
+        $('nav ul .feat-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+      });
+      $('.serv-btn').click(function(){
+        $('nav ul .serv-show').toggleClass("show1");
+        $('nav ul .second').toggleClass("rotate");
+      });
+      $('nav ul li').click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+</br>
+
+
+    <!-- App Wrapper -->
+    <main class="app">
+        <!-- Greeting -->
+        <section class="greeting">
+            <h2 class="title">
+                What's up, <input type="text" id="name" placeholder="Name here" />
+            </h2>
+        </section>
+        <!-- End of Greeting -->
+
+        <!-- New Todo -->
+        <section class="create-todo">
+            <h3>CREATE A TODO</h3>
+            <form id="new-todo-form">
+                <h4>What's on your todo?</h4>
+                <input type="text" placeholder="e.g. Get some milk" name="content" id="content" />
+
+                <h4>Pick a category</h4>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="category" id="category1" value="business" />
+                        <span class="bubble business"></span>
+                        <div>Business</div>
+                    </label>
+                    <label>
+                        <input type="radio" name="category" id="category2" value="personal" />
+                        <span class="bubble personal"></span>
+                        <div>Personal</div>
+                    </label>
+                </div>
+
+                <input type="submit" value="Add todo" />
+            </form>
+        </section>
+        <!-- End of New Todo -->
+
+        <!-- Todo List -->
+        <section class="todo-list">
+            <h3>TODO LIST</h3>
+            <div class="list" id="todo-list"></div>
+        </section>
+        <!-- End of Todo List -->
+
+    </main>
+    <!-- End of App Wrapper -->
+
+    <!-- JS Import -->
+    <script src="js/main.js"></script>
+    <!-- End of JS Import -->
+</body>
+
+</html>

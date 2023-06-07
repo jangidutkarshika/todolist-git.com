@@ -1,0 +1,94 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background: #ffffff;
+}
+
+html{ 
+	scroll: smooth;
+}
+h1{
+	color: #ffffff;
+	font: 700 2.5rem/3rem "Montserrat", sans-serif;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.button {
+  background-color: #e7e7e7;
+  border: none;
+  color: #2e4053;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 550px 20px 550px;
+  cursor: pointer;
+}
+button:hover, button:active {
+  background-color: #2e4053;
+  color: #ffffff;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.wrapper{
+	background: #2e4053;
+	margin-top: 4%;
+	box-sizing: border-box;
+	max-width: 100%;
+	height: auto;
+	object-fit: fill;
+	border-radius: 1%;
+	display: grid;
+	padding: 10% 2% 14% 3%;
+	text-align: center;
+}
+
+.button{
+	cursor: pointer;
+    border-radius: 12px;
+	background-color: #ffffff;
+	padding: 30px 35px;
+}
+
+.button:hover{
+	background-color: #ffffff;
+
+}
+.button:active{
+	background-color: #ffffff;
+	box-shadow: 0 5px #666;
+}
+
+
+.card{
+	background: #ffffff;
+	margin-top: 4%;
+	display: block;
+	display: flexible;
+	box-sizing: border-box;
+	max-width: 100%;
+	height: auto;
+	border-radius: 1%;
+	display:  grid;
+	padding: 10% 2% 14% 3%;
+	text-align: center;
+	object-fit: fill;
+}
+
+h2{
+	text-align: center;
+	Font-size: 30px;
+	color: #2e4053;
+}
+
+
+h2{
+	text-align: center;
+	Font-size: 25px;
+	color: #2e4053;
+}
+

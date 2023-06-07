@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List 2023</title>
+    <!-- CSS Import -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyC-QlYhextaRhuU3IalRI1BA6vZgR86r3I",
+    authDomain: "to-do-60077.firebaseapp.com",
+    projectId: "to-do-60077",
+    storageBucket: "to-do-60077.appspot.com",
+    messagingSenderId: "1093130683975",
+    appId: "1:1093130683975:web:e52144f826e397d53bd362",
+    measurementId: "G-J2BRWRM7KD"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+<div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+      <div class="text">To Do List</div>
+      <ul>
+        <li class="active"><a href="index.html">Home  </a></li>
+        <li>
+          <a href="#" class="feat-btn">All Tasks 
+            <span class="fas fa-caret-down first"></span>
+          </a>
+          <ul class="feat-show">
+            <li><a href="today.html">Today</a></li>
+            <li><a href="upcoming.html">Upcoming</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="serv-btn">My lists
+            <span class="fas fa-caret-down second"></span>
+          </a>
+          <ul class="serv-show">
+            <li><a href="home.html">Personal</a></li>
+            <li><a href="home.html">Work</a></li>
+          </ul>
+        </li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="calender.html">Calender</a></li>
+        <li><a href="inbox.html">Inbox</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSftMgR67msKoKWmMbAGp2WDGeyBhqpSqJWZsoTuir7zpmjYLQ/viewform?usp=sf_link">Feedback</a></li>
+      </ul>
+    </nav>
+  
+    <script>
+    $('.btn').click(function(){
+      $(this).toggleClass("click");
+      $('.sidebar').toggleClass("show");
+    });
+      $('.feat-btn').click(function(){
+        $('nav ul .feat-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+      });
+      $('.serv-btn').click(function(){
+        $('nav ul .serv-show').toggleClass("show1");
+        $('nav ul .second').toggleClass("rotate");
+      });
+      $('nav ul li').click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+</br>
+
+	<h1 style="font-family: arial; color:  #2e4053;">Do Daily Tasks</h1>
+	<div class="login_bt"><a href="login.html">LOGIN</a></div>
+	<div class="wrapper">
+	<div class="card">
+	
+	<img src="images/header-background.jpg" alt="Puri" width=" 100%"; height="auto">
+	</div>
+	<h4>Plan your to-do list</h4>
+	<h4>Organize your day from anywhere</h4> 
+	<h4>Never miss a deadline</h4>
+	<div class="card">
+	<h4>Go beyond checking off daily tasks on your to-do list</h4>
+	<div class="about_bt"><a href="home.html">CREATE</a></div>
+	</div>
+	  <div class="case">
+	<h2>ABOUT US</h2>
+	<p>Make your to-do lists and having all the information you need to get your tasks done.</p></br>
+   	<p>Keep your to-do list organize. You can add personal work, Business related  works, fitness and health, social, study and professional
+  	 group task etc. different types of tasks.As you complete each task, you can mark it as done or delete it from the list. You can also set reminders or notifications to help 		you remember important deadlines.A to-do list website can be accessed from any device with an internet connection, so you can stay organized and productive 			wherever you are.It's a simple and convenient way to manage your tasks and stay on top of your responsibilities</p>
+	 <h2 style="font-size: 20px;">Why Use a To Do List?</h2>
+  	<p>When it comes to keeping track of the things you need to do on any given day it can be hard to do based on your memory alone.
+  	   How many times have you told yourself you were going to do something on a certain day and then realized several days later you forgot about it? </br>
+ </br>
+    	A to-do list app makes it a whole lot easier to remember all of the things that you need to do. They work in different ways, depending on the specific app that you 	choose. 
+   	 But each one is going to give you a way to write down all of the things that need to be done during the day, week, month, a year, or even hour. You get to choose how to 	track and then you get to choose what to track. From there, you’re going to have no problem recording everything and that means an easier time trying to get those 	things done. You just need the right app.</p>
+
+</div>
+</div>
+</body>
+</html>
