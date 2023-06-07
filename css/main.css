@@ -211,9 +211,9 @@ input:checked~.bubble::after {
 .todo-item .actions {
   
     display: block;
-      box-sizing: border-box;
+    box-sizing: border-box;
     align-items: center;
-    
+    justify-content: end;
 }
 
 .todo-item .actions button {
