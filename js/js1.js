@@ -77,7 +77,7 @@ deleteAllBtn.onclick = () => {
 
 // Set the date and time for the reminder (in this example, 5 second from now)
 let reminderTime = new Date();
-reminderTime.setSeconds(reminderTime.getSeconds() + 10);
+reminderTime.setSeconds(reminderTime.getSeconds() + 5);
 
 // Function to display the reminder message
 function remindTask() {
